@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="html5, css3, Javascript, diseño web"/>
     <title>registro</title>
     <!-- BOOTSTRAP 4 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- FONT AWESOME 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script src="Validar.js"></script>
 </head>
 <body>
     <br><br><br><br><br>
-    <div class="col-md-4 mx-auto"> 
+    <div class="col-md-4 mx-auto">
         <div class="card card-body">
-            <form action="ingresaradmi.html" method="POST">
+            <form action="ingresaradmi.html" method="POST" >
                 <div>
                     <p class="text-center">DATOS DEL REGISTRO</p>
-                    NOMBRE<input type="text" name="nombre" class="form-control">
-                    APELLIDO<input type="text" name="apellido" class="form-control">
-                    CORREO ELECTRONICO<input type="text" name="correo" class="form-control">
-                    USUARIO<input type="text" name="usuario" class="form-control">
-                    CONTRASEÑA<input type="password" name="contraseña" class="form-control">
-                    CARGO<input type="text" name="cargo" class="form-control">
+                    NOMBRE<input type="text" name="nombre" class="form-control" id="NOMBRE">
+                    APELLIDO<input type="text" name="apellido" class="form-control" id="APELLIDO">
+                    CORREO ELECTRONICO<input type="text" name="correo" class="form-control" id="CORREO">
+                    USUARIO<input type="text" name="usuario" class="form-control" id="USUARIO">
+                    CONTRASEÑA<input type="password" name="contraseña" class="form-control" id="CONTRASEÑA">
+                    CARGO<input type="text" name="cargo" class="form-control" id="CARGO">
                     <br>
                 </div>
-                <input type="submit" class="btn btn-success btn-block" name="guardar" value="Guardar">
+                <input type="submit" class="btn btn-success btn-block" name="guardar" value="Guardar" id="guardar" onclick="return validar();">
             </form><br>
         </div>
     </div>
